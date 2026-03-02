@@ -10,7 +10,7 @@ from io import BytesIO
 load_dotenv()
 
 
-api_key= os.getenv("AIzaSyCAF0V3chm8WtVc21h_bJ87nz9xh2xdkoc")
+api_key= os.getenv("     ")
 if not api_key:
     raise  ValueError("API key  not found")
 
@@ -69,6 +69,7 @@ def narrate_story(story_text):
         return audio_fp
     except Exception as e:
         return f"An unexpected error  occured during the API call"
+
 
 
 
